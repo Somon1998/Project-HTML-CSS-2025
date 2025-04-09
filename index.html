@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karimzoda Somon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #f0f4f8;
+        color: #333;
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        animation: fadeIn 1s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #1f2937;
+      }
+
+      .subtitle {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #1f2937;
+      }
+
+      .text-block p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .image-block {
+        margin: 30px 0;
+        text-align: center;
+      }
+
+      .image-block img {
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s;
+      }
+
+      .image-block img:hover {
+        transform: scale(1.03);
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, #4f46e5, #3b82f6);
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .download-btn:hover {
+        background: linear-gradient(135deg, #3b82f6, #4f46e5);
+        transform: translateY(-2px);
+      }
+
+      .download-btn:active {
+        transform: translateY(1px);
+      }
+
+      .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .skills-table thead {
+        background: #4f46e5;
+        color: #fff;
+      }
+
+      .skills-table th,
+      .skills-table td {
+        padding: 16px;
+        text-align: left;
+        font-size: 16px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .skills-table tbody tr:hover {
+        background: #f0f4f8;
+      }
+
+      .social-links {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 24px;
+        color: #4f46e5;
+        transition: transform 0.2s, color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: #3b82f6;
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+
+        .container {
+          flex-direction: column;
+          padding: 10px;
+        }
+
+        .item {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="text-block">
+        <h1 class="title">Karimzoda Somon</h1>
+        <p>Добро пожаловать на мой сайт!</p>
+        <p>Веб-дизайнер — делаю красивые и удобные сайты</p>
+      </section>
+
+      <section class="image-block">
+        <a href="img/avatar.jpg" target="_blank">
+          <img
+            src="https://sun22-1.userapi.com/impg/VNuTD1A4QYIj05_-b_AxauKZsdlgimTTzdY35A/NzYbtQrGliw.jpg?size=1728x2160&quality=96&sign=535267d6f75fb1931dda42512965a1be&type=album"
+            alt="мои фотки"
+            title="Как я провел зимой в KFC"
+          />
+        </a>
+      </section>
+
+      <section>
+        <a href="files/archive.zip" class="download-btn">⬇ Скачать архив</a>
+      </section>
+
+      <section class="table-block">
+        <h2 class="subtitle">Навыки</h2>
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Навык</th>
+              <th>Уровень</th>
+              <th>Опыт</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML / CSS</td>
+              <td>Продвинутый</td>
+              <td>3 года</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Средний</td>
+              <td>2 года</td>
+            </tr>
+            <tr>
+              <td>Figma</td>
+              <td>Эксперт</td>
+              <td>4 года</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="social-links">
+        <h2 class="subtitle">Контакты</h2>
+        <a href="https://t.me/somon_karimzoda" target="_blank" title="Telegram"
+          >телеграм📨</a
+        >
+        <a
+          href="https://www.instagram.com/somon7650k"
+          target="_blank"
+          title="Instagram"
+          >инстаграм📸</a
+        >
+        <a
+          href="https://github.com/your_username"
+          target="_blank"
+          title="GitHub"
+          >GitHub💻</a
+        >
+        <a href="mailto:somon@example.com" target="_blank" title="Email"
+          >📧 Email</a
+        >
+      </section>
+    </div>
+  </body>
+</html>
